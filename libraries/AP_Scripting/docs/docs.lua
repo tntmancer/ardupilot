@@ -1715,6 +1715,24 @@ function mavlink_video_stream_information_t_ud:encoding(value) end
 function camera:set_stream_information(instance, stream_info) end
 
 -- desc
+wheel_encoder = {}
+
+-- desc
+---@param instance integer
+---@return number
+function wheel_encoder:get_delta_angle(instance) end
+
+-- desc
+---@param instance integer
+---@return number
+function wheel_encoder:get_distance(instance) end
+
+-- desc
+---@param instance integer
+---@return number
+function wheel_encoder:get_rate(instance) end
+
+-- desc
 mount = {}
 
 -- desc
