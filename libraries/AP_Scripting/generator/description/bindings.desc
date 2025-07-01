@@ -833,6 +833,10 @@ include APM_Control/AR_AttitudeControl.h depends APM_BUILD_TYPE(APM_BUILD_Rover)
 singleton AR_AttitudeControl depends APM_BUILD_TYPE(APM_BUILD_Rover)
 singleton AR_AttitudeControl method get_srate void float'Ref float'Ref
 
+include AP_WheelEncoder/AP_WheelEncoder.h
+singleton AP_WheelEncoder APM_BUILD_TYPE(APM_BUILD_Rover)
+singleton AP_WheelEncoder rename wheel_encoder
+
 include AP_Mount/AP_Mount.h
 singleton AP_Mount depends HAL_MOUNT_ENABLED == 1
 singleton AP_Mount rename mount
