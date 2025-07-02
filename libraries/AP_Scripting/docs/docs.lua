@@ -4299,4 +4299,3 @@ function DroneCAN_Handle_ud:request(target_node, payload) end
 ---@param payload string -- payload for message
 ---@return boolean -- true if send succeeded
 function DroneCAN_Handle_ud:broadcast(payload) end
-
